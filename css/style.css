@@ -288,9 +288,7 @@ header {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.social-links-svg {
-  fill: #afb1b8;
-}
+
 .ourteam-title {
   font-family: var(--main-font);
   font-weight: 500;
@@ -313,25 +311,33 @@ header {
   margin-top: 10px;
   margin-bottom: 16px;
 }
-.social-links:hover,
-.social-links:focus {
-  color: var(--accent-color);
-}
+
 .social-links-item:not(:last-child) {
   margin-right: 10px;
 }
 .social-links {
-  color: var(--main-text-color);
   font-family: var(--main-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 .social-links-list {
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
 }
-.social-links.link {
-  width: 20px;
-  height: 20px;
+.social-links-svg {
+  fill: #afb1b8;
+}
+.social-links:hover {
+  background-color: var(--accent-color);
+}
+.social-links-svg:hover {
+  fill: var(--light-text-color);
 }
 /*------------------ CLIENTS--------------------*/
 .clients-title {
