@@ -381,6 +381,10 @@ header {
 .clients-links-svg:focus {
   fill: var(--accent-color);
 }
+.clients-links:hover,
+.clients-links:focus {
+  border: 1px solid var(--accent-color);
+}
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -399,7 +403,7 @@ header {
 .footer-social-links {
   display: flex;
 }
-.social-link-item:not(:last-child) {
+.social-links-footer:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -467,6 +471,10 @@ header {
 }
 .social-links-svg-footer {
   fill: var(--light-text-color);
+}
+.social-links-footer:hover,
+.social-links-footer:focus {
+  background-color: var(--accent-color);
 }
 /*------------------PORTFOLIO---------------------------*/
 .button-filter {
