@@ -197,10 +197,7 @@ header {
   border: 0;
   padding: 10px 32px;
 }
-.main-button:hover,
-.main-button:focus {
-  color: var(--accent-color);
-}
+
 /*-------------------------ABOUT US-------------------------*/
 .about-us-description {
   font-family: var(--main-font);
