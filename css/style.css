@@ -117,6 +117,8 @@ header {
 }
 .header-adress-mail,
 .header-adress-tel {
+  display: flex;
+  align-items: center;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -147,10 +149,7 @@ header {
   background: var(--accent-color);
   border-radius: 2px;
 }
-
 .header-adress-mail-svg {
-  display: flex;
-  align-items: baseline;
   margin-right: 10px;
 }
 .header-adress-item:hover {
@@ -158,7 +157,7 @@ header {
   color: var(--accent-color);
 }
 
-/*--------------HERO----------------------*/
+/*------------------------------H__E___R___O-----------------------------------------*/
 .hero {
   text-align: center;
   background-position: center;
