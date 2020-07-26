@@ -5,6 +5,7 @@
   --main-text-color: #757575;
   --light-text-color: #ffffff;
   --main-font: "Roboto", sans-serif;
+  --second-font-color: #afb1b8;
 }
 html {
   box-sizing: border-box;
@@ -152,8 +153,9 @@ header {
   align-items: baseline;
   margin-right: 10px;
 }
-.header-adress-mail-svg:hover {
+.header-adress-item:hover {
   fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /*--------------HERO----------------------*/
@@ -215,14 +217,6 @@ header {
 .about-us-list {
   display: flex;
 }
-.about-us-item {
-  width: 270px;
-}
-.img-about-us {
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
 .about-us-title {
   font-family: var(--main-font);
   font-size: 14px;
@@ -233,6 +227,53 @@ header {
 }
 .about-us-item:not(:last-child) {
   margin-right: 30px;
+}
+.about-us-item {
+  margin-bottom: 30px;
+}
+.about-us-item.svg1::before {
+  display: inline-block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  background-image: url(../images/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-us-item.svg2::before {
+  display: inline-block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.about-us-item.svg3::before {
+  display: inline-block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.about-us-item.svg4::before {
+  display: inline-block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
 }
 /*-------------------OFFERS---------------------------*/
 .offers-main-title {
@@ -336,7 +377,7 @@ header {
 .social-links:hover {
   background-color: var(--accent-color);
 }
-.social-links-svg:hover {
+.social-links:hover .social-links-svg {
   fill: var(--light-text-color);
 }
 /*------------------ CLIENTS--------------------*/
@@ -375,15 +416,14 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .clients-links-svg {
-  fill: #afb1b8;
+  fill: var(--second-font-color);
 }
-.clients-links-svg:hover,
-.clients-links-svg:focus {
-  fill: var(--accent-color);
-}
-.clients-links:hover,
-.clients-links:focus {
+
+.clients-links:hover {
   border: 1px solid var(--accent-color);
+}
+.clients-links:hover .clients-links-svg {
+  fill: var(--accent-color);
 }
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
